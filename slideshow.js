@@ -349,6 +349,8 @@ self.prototype = {
 
 			this.adjustFontSize();
 
+			$('.slide-number').textContent = this.slide + 1;
+
 			// Update items collection
 			this.items = $$('.delayed, .delayed-children > *', this.slides[this.slide]);
 			this.item = 0;

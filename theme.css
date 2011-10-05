@@ -106,7 +106,7 @@ pre strong {
 	border:30px solid transparent;
 }
 
-.slide:target::before {
+.slide-number {
 	background: rgba(255, 255, 255, .6);
 	color: black;
 	text-shadow: .03em .03em .1em white;

@@ -9,10 +9,8 @@ html, body {
 }
 
 body {
-	counter-reset: slide;
 	margin: 0;
 }
-
 .slide {
 	display: none;
 	position:absolute;
@@ -29,8 +27,6 @@ body {
 	height:0;
 	width:0;
 	overflow:hidden;
-
-	counter-increment: slide;
 
 	-webkit-transition:1s opacity, 1s -webkit-transform;
 	-moz-transition:1s opacity, 1s -moz-transform;
@@ -56,8 +52,7 @@ body {
 /**
  * Slide number
  */
-.slide:target::before {
-	content: counter(slide);
+.slide-number {
 	position: absolute;
 	top: .05in;
 	right: .5em;
@@ -79,7 +74,6 @@ body {
 	-webkit-border-radius: 999px;
 	border-radius: 999px;
 }
-
 /* If there's nothing selected, show the first */
 .slide:first-child {
 	z-index:2;
